@@ -1,0 +1,52 @@
+<html>
+    <head>
+	<script src="formChecker.js" defer></script>
+         <title>Exercise 03</title>
+        <h1 style="text-align: center;" >Welcome to Watch Mania</h1>   
+        <h2 style="font-size: 20px; text-align:center;">"The House of Leisure"</h2> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id='Storeback' action="customerBackend.php" method="POST">
+            <div class="Products">
+                <div class="Watches">
+                <image src="carrera.jpg" style="height: 350px;"></image>
+                <label><br>TAG HEUER CARRERA ($2850.00)</label><br><br>
+		&emsp;&emsp;
+                <input type="number" name="carrera" id="carrera" min="0">
+            </div>
+            <div class="Watches">
+                <image src="movado.jpg" style="height: 350px;"></image>
+                <label><br>Movado Modern 47($695.00)</label><br><br>
+		&ensp;
+                <input type="number" name="movado" id="movado" min="0">
+            </div>
+            <div class="Watches">
+                <image src="rolex.jpg" style="height: 350px;"></image>
+                <label><br>Rolex Submariner Date Watch($8750.00)</label><br><br>
+		&emsp;&emsp;&emsp;
+                <input type="number" name="rolex" id="rolex" min="0">
+            </div>
+            </div>
+
+            <div class="ShipmentOption">
+                <h3>Shipment Choices:</h3>
+            <input name="choice" type="radio" value="Normal" id="7days"> Free (7-days) 
+            <input name="choice" type="radio" value="Express" id="3days"> $5.00 Express (3-days) 
+            <input name="choice" type="radio" value="Priority" id="overnight"> $50.00 Priority (Over-night)
+                </div>
+
+           <div class="Input">
+               <h3>User Login</h3>
+               <label>UserName:</label>
+               <input type="text" class="UserName" name="username" id="username">
+               <br></br><label>Password:</label>
+               <input type="password" class="Password" name="password" id="password">
+               <br></br>
+               <button value="Submit" id="Add">Submit</button>
+            </div>
+            </div>
+        </form>
+        <button value="Reset" id="Reset" onclick="Reset()">Reset</button>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+   }
+   
+   .Watches 
+   {
+     float: left;
+     width: 23%;
+     padding: 8px;
+     align-items: center;
+   }
+   
+   .Products::after 
+   {
+     content: "";
+     clear: both;
+     display: table;
+    }
